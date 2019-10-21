@@ -1,0 +1,48 @@
+1. NEWTON SECOND LAW
+STORE "massa" with 600 in kg
+STORE "percepatan" with 2 in m/s2
+STORE "gaya" without any value
+CALCULATE "massa" times "percepatan"
+SET "gaya" to calculation result
+DISPLAY value of "gaya" in newton
+
+
+
+2. TAHUN KABISAT
+READ and STORE "tahun"
+IF "tahun" modulus 4 equals to 0 
+	AND "tahun" modulus 100 not equals to 0
+OR "tahun" modulus 4 equals to 0
+	AND "tahun" modulus 100 equals to 0
+	AND "tahun" modulus 400 equals to 0
+THEN DISPLAY "Tahun Kabisat"
+ELSE DISPLAY "Bukan Tahun Kabisat"
+
+
+
+3. LAUNDRY DAY
+STORE "pakaian" with 20
+STOTE and set "stateofmachine" to FALSE
+STORE and SET "count" to 0
+IF "count" equals to 20 THEN
+	SET "stateofmachine" to TRUE
+ELSE
+	WHILE "count" < value of "pakaian" DO
+		ADD 1 to "count"
+	END WHILE
+END IF
+
+
+
+4. PERIKSA KUKU
+STORE "siswa" with 40
+STORE and SET "panjang" to TRUE
+STORE and SET "count" to 0
+WHILE "count" < value of "siswa" DO
+	IF "panjang" THEN
+		DISPLAY "Guru Menghukum Siswa"
+	ELSE
+		DISPLAY "Guru Memuji Siswa"
+	END IF
+	ADD 1 to "count"
+END WHILE	
