@@ -10,13 +10,16 @@ DISPLAY value of "gaya" in newton
 
 2. TAHUN KABISAT
 READ and STORE "tahun"
-IF "tahun" modulus 4 equals to 0 
-	AND "tahun" modulus 100 not equals to 0
-OR "tahun" modulus 4 equals to 0
-	AND "tahun" modulus 100 equals to 0
-	AND "tahun" modulus 400 equals to 0
-THEN DISPLAY "Tahun Kabisat"
+IF "tahun" modulus 4 equals to 0
+AND "tahun" modulus 100 not equals to 0 THEN
+	DISPLAY "Tahun Kabisat"
+ELSE IF "tahun" modulus 4 equals to 0
+AND "tahun" modulus 100 equals to 0
+AND "tahun" modulus 400 equals to 0 THEN
+	DISPLAY "Tahun Kabisat"
 ELSE DISPLAY "Bukan Tahun Kabisat"
+END IF
+
 
 
 
