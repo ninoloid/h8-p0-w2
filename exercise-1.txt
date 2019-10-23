@@ -48,4 +48,4 @@ WHILE "count" < value of "siswa" DO
 		DISPLAY "Guru Memuji Siswa"
 	END IF
 	ADD 1 to "count" and STORE
-END WHILE	
+END WHILE
