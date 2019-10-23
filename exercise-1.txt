@@ -31,7 +31,7 @@ IF "count" equals to 20 THEN
 	SET "stateofmachine" to TRUE
 ELSE
 	WHILE "count" < value of "pakaian" DO
-		ADD 1 to "count"
+		ADD 1 to "count" and STORE
 	END WHILE
 END IF
 
@@ -47,5 +47,5 @@ WHILE "count" < value of "siswa" DO
 	ELSE
 		DISPLAY "Guru Memuji Siswa"
 	END IF
-	ADD 1 to "count"
+	ADD 1 to "count" and STORE
 END WHILE	
