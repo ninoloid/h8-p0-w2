@@ -1,6 +1,7 @@
 var tanggal = 1;
 var bulan = 12;
 var tahun = 1993;
+var validasi = false;
 
 switch (true) {
   case tanggal >= 1 && tanggal <= 31 && bulan >= 1 && bulan <= 12 && tahun >= 1900 && tahun <= 2200:
@@ -51,10 +52,16 @@ switch (bulan) {
     validasi = false;
 }
 
+
+// use switch case
 switch (true) {
   case validasi:
     console.log(tanggal + ' ' + bulan + ' ' + tahun);
     break;
   default:
-    console.log('Harap masukkan angka yang benar \n Tanggal : 1 - 31 \n Bulan : 1 - 12 \n Tahun : 1900 - 2200')
+    console.log('Harap masukkan angka yang benar \n Tanggal : 1 - 31 \n Bulan : 1 - 12 \n Tahun : 1900 - 2200');
 }
+
+
+// without switch case
+// validasi ? console.log(tanggal + ' ' + bulan + ' ' + tahun) : console.log('Harap masukkan angka yang benar \n Tanggal : 1 - 31 \n Bulan : 1 - 12 \n Tahun : 1900 - 2200');

@@ -5,7 +5,7 @@ function konversiMenit(menit) {
     case menit < 10:
       return jam + ':0' + menit;
     default:
-      return jam + ':' + menit
+      return jam + ':' + menit;
   }
 }
 

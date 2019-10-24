@@ -1,7 +1,7 @@
 // TUGAS 1
 
 const shoutOut = () => 'Halo Function!';
-console.log(shoutOut()) // Menampilkan "Halo Function!" di console
+console.log(shoutOut()); // Menampilkan "Halo Function!" di console
 
 
 // TUGAS 2
