@@ -1,13 +1,20 @@
 function konversiMenit(menit) {
   let jam = parseInt(menit / 60);
   menit %= 60;
-  switch (true) {
-    case menit < 10:
-      return jam + ':0' + menit;
-    default:
-      return jam + ':' + menit;
-  }
+  return menit < 10 ? jam + ':0' + menit : jam + ':' + menit;
 }
+
+// USE SWITCH CASE
+// function konversiMenit(menit) {
+//   let jam = parseInt(menit / 60);
+//   menit %= 60;
+//   switch (true) {
+//     case menit < 10:
+//       return jam + ':0' + menit;
+//     default:
+//       return jam + ':' + menit;
+//   }
+// }
 
 // TEST CASES
 console.log(konversiMenit(63)); // 1:03

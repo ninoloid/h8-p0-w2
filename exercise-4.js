@@ -3,13 +3,20 @@ var bulan = 12;
 var tahun = 1993;
 var validasi = false;
 
-switch (true) {
-  case tanggal >= 1 && tanggal <= 31 && bulan >= 1 && bulan <= 12 && tahun >= 1900 && tahun <= 2200:
-    validasi = true;
-    break;
-  default:
-    validasi = false;
+if (tanggal >= 1 && tanggal <= 31 && bulan >= 1 && bulan <= 12 && tahun >= 1900 && tahun <= 2200) {
+  validasi = true;
+} else {
+  validasi = false;
 }
+
+// Pakai switch case
+// switch (true) {
+//   case tanggal >= 1 && tanggal <= 31 && bulan >= 1 && bulan <= 12 && tahun >= 1900 && tahun <= 2200:
+//     validasi = true;
+//     break;
+//   default:
+//     validasi = false;
+// }
 
 switch (bulan) {
   case 1:
@@ -53,9 +60,9 @@ switch (bulan) {
 }
 
 
-// use switch case
-switch (true) {
-  case validasi:
+// Pakai switch case
+switch (validasi) {
+  case true:
     console.log(tanggal + ' ' + bulan + ' ' + tahun);
     break;
   default:
