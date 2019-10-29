@@ -10,12 +10,12 @@ function xo(str) {
       return 'Input salah, hanya menerima input \'x\' atau \'o\'';
     }
 
-    // Pakai switch case
-    // switch (true) {
-    //   case str[i] === 'x':
+    // // Pakai switch case untuk menghitung x dan o;
+    // switch (str[i]) {
+    //   case 'x':
     //     countX += 1;
     //     break;
-    //   case str[i] === 'o':
+    //   case 'o':
     //     countO += 1;
     //     break;
     //   default:
@@ -24,15 +24,15 @@ function xo(str) {
   }
   return countX === countO ? true : false;
 
-  // Pakai switch case
-  // switch (true) {
-  //   case countX === countO:
+  // Pakai switch case untuk bandingkan value countX dan countO
+  // switch (countX) {
+  //   case countO:
   //     return true;
   //   default:
   //     return false;
   // }
 
-  // Pakai if else
+  // Pakai if else untuk bandingkan value countX dan countO
   // if (countX === countO) {
   //   return true;
   // } else {
